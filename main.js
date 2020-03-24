@@ -2,7 +2,69 @@
  * YOUR CODE HERE *
  ******************/
 
+function triple(num){
 
+return num*3
+}
+
+const tripleAll=function(nums){
+
+return nums.map(triple)
+}
+
+const getNegativeValue= function(num){
+
+if (num>0){ return num * -1
+}
+if (num<0){
+  return num
+}
+if (num===0){
+  return num
+}
+}
+
+const negativeValues = function(nums){
+
+  return nums.map(getNegativeValue)
+}
+
+const makeQuestion = function (str){
+
+return str + '?'  
+}
+
+const questionings = function(str){
+
+  return str.map(makeQuestion)
+}
+
+const getInitials = function(str1,str2){
+
+  return str1.slice(1) + str2.slice(1)
+}
+
+const changeToInitials = function (str1,str2){
+
+return str1,str2.map(getInitials)
+}
+
+const doubleIfEven =function(nums){
+
+  if (nums%2 === 0){
+
+return nums*2
+}
+
+if (nums%2 !== 0){
+return nums
+}
+}
+
+const doubleEven = function(nums){
+
+  return nums.map(doubleIfEven)
+}
 
 
 /********************************
